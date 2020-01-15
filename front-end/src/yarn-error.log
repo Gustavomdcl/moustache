@@ -1,0 +1,67 @@
+Arguments: 
+  /Users/gustavomdcl/.nvm/versions/node/v10.16.3/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
+
+PATH: 
+  /Users/gustavomdcl/.nvm/versions/node/v10.16.3/bin:/Users/gustavomdcl/.nvm/versions/node/v10.16.3/bin:/Users/gustavomdcl/.nvm/versions/node/v10.16.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/gustavomdcl/.nvm/versions/node/v10.16.3/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Applications/AMPPS/www/starter.js/start/src/package.json: Unexpected string in JSON at position 86
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "start",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+    "devDependencies": {
+      "@babel/cli": "^7.6.0",
+      "@babel/core": "^7.6.0",
+      "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+      "@babel/plugin-transform-async-to-generator": "^7.5.0",
+      "@babel/polyfill": "^7.6.0",
+      "@babel/preset-env": "^7.6.0",
+      "async": "^3.1.0",
+      "babel-loader": "^8.0.6",
+      "gulp": "^4.0.2",
+      "gulp-concat": "^2.6.1",
+      "gulp-consolidate": "^0.2.0",
+      "gulp-for-compass": "0.0.2",
+      "gulp-htmlmin": "^5.0.1",
+      "gulp-iconfont": "^10.0.3",
+      "gulp-image": "^5.1.0",
+      "gulp-minify-css": "^1.2.4",
+      "gulp-prune": "^0.2.0",
+      "gulp-rename": "^1.4.0",
+      "gulp-uglify": "^3.0.2",
+      "gulp-webserver": "^0.9.1",
+      "lodash": "^4.17.15",
+      "webpack": "^4.39.3",
+      "webpack-cli": "^3.3.8"
+    },
+    "scripts": {
+      "webpack": "webpack --mode=development -w"
+    },
+    "dependencies": {
+      "axios": "^0.19.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

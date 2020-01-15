@@ -1,0 +1,7 @@
+img {
+	@include box-sizing(border-box);
+	max-width: 100%;
+	&.full {
+		width: 100%;
+	}
+}

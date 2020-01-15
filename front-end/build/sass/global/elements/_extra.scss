@@ -1,0 +1,36 @@
+//LIST
+	.linear {
+		display: inline-table;
+		border-spacing: 5px;
+		&>ul {
+			display: table-row;
+			&>li {
+				display: table-cell;
+			}
+		}
+	}
+//RESPONSIVE
+	.mobile-on {
+		display: none;
+		@include responsivo(max-width, $broken) {
+			display: block;
+		}
+	}
+	.desktop-on {
+		display: block;
+		@include responsivo(max-width, $broken) {
+			display: none;
+		}
+	}
+//STATE
+	.hidden {
+		&, & p, & li {
+			opacity: 0;
+		}
+	}
+	.canvas {
+		position: relative;
+		&>* {
+			position: absolute;
+		}
+	}

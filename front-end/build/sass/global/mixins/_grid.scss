@@ -1,0 +1,12 @@
+@mixin grid($screen,$width,$size){
+  @media (min-width: $screen) {// screen >= $screen
+    // .container {
+    //     max-width: $width;
+    // }
+    @for $i from 1 through $column_number {
+      .col-#{$size}-#{$i} {
+          max-width: $i * $column_width;
+      }
+    }
+  }
+}

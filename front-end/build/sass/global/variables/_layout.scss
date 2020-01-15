@@ -1,0 +1,24 @@
+// LAYOUT
+	$column_number:								12;
+	$column_width:								percentage(1/$column_number);
+// LINE BREAKS
+	//GRID
+		//SMALL
+			$small:						540px;
+			$sm:							576px;
+		//MEDIUM
+			$medium:					720px;
+			$md:							768px;
+		//LARGE
+			$large:						960px;
+			$lg:							992px;
+		//EXTRA LARGE
+			$extra-large:			1140px;
+			$xl:							1200px;
+	//INIT
+		$mobile-portrait: 	320px;
+		$mobile-landscape: 	480px;
+		$tablet-portrait: 	768px;
+		$tablet-landscape: 	1024px;
+//MOBILE
+		$broken: 						$container-max-width;

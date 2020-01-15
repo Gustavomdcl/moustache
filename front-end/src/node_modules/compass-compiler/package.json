@@ -1,0 +1,26 @@
+{
+  "name": "compass-compiler",
+  "version": "0.0.1",
+  "description": "compiler for compass",
+  "main": "lib/compass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neekey/compass-compiler.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neekey/compass-compiler/issues"
+  },
+  "homepage": "https://github.com/neekey/compass-compiler",
+  "dependencies": {
+    "bin-version-check": "~1.0.0",
+    "dargs": "~2.0.3",
+    "glob": "~4.0.5",
+    "lodash": "~2.4.1",
+    "tmp": "0.0.24"
+  }
+}

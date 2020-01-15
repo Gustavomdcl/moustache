@@ -1,0 +1,5 @@
+@mixin responsivo($type, $query) {
+  @media($type: $query) {
+    @content;
+  }
+}

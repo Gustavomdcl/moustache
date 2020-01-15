@@ -1,0 +1,53 @@
+//TITLES
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font-family;
+		font-weight: bold;
+		margin: 20px 0px;
+	}
+	h1 { @include font-size(28); }
+	h2 { @include font-size(24); }
+	h3 { @include font-size(22); }
+	h4 { @include font-size(20); }
+	h5 { @include font-size(18); }
+	h6 { @include font-size(16); }
+//TEXT
+	p {
+		margin: 6px 0;
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	em, i {
+		font-style: italic;
+	}
+	strong em, 
+	b em, 
+	em strong, 
+	em b {
+		font-weight: bold;
+		font-style: italic;
+	}
+//LIST
+	ul.lista {
+    li {
+			padding-left: 15px;
+			margin: 6px 0;
+      &::before {
+        content: "•";
+        margin-left: -15px;
+        margin-top: -12px;
+        font-size: 30px;
+        position: absolute;
+      }
+    }
+	}
+//LINKS
+	a {
+		text-decoration: none;
+		word-break: break-all;
+		@include responsivo(min-width, $broken) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}

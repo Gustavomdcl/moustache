@@ -1,0 +1,13 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-weight: normal;
+  font-size: $font-size+px; //1em = 14px; 3em = 42px; 1.28em = 18px; FONTEpx/14px = FONTEem
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
