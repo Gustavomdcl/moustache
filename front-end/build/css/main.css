@@ -250,7 +250,7 @@ div[class*=col] {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding: 0px 8px;
+  padding: 7.5px 15px;
 }
 
 /* line 22, ../sass/global/_layout.scss */
@@ -768,4 +768,164 @@ div.col12 {
   100% {
     transform: translateX(0px);
   }
+}
+/* line 3, ../sass/template/_main.scss */
+#root .boiler section header {
+  padding: 25px 0px;
+}
+/* line 5, ../sass/template/_main.scss */
+#root .boiler section header h1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+/* line 12, ../sass/template/_main.scss */
+#root .boiler section.carrossel main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 18, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article {
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #9b9b9d;
+  box-shadow: 10px 20px 0px 0px #f6f6f6;
+  width: 100%;
+  max-width: 390px;
+  margin: 15px auto 0px auto;
+}
+/* line 26, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article figure {
+  position: relative;
+}
+/* line 28, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article figure a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0px 30px;
+  color: #fff;
+  background-color: #221e41;
+  font-size: 18px;
+}
+/* line 36, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article figure a:hover {
+  text-decoration: none;
+}
+/* line 41, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article .content {
+  padding: 20px 40px 40px 40px;
+}
+/* line 43, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article .content h1 {
+  margin-top: 0px;
+  font-size: 2.28571em;
+  font-weight: 500;
+}
+/* line 48, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article .content p {
+  font-size: 17px;
+}
+/* line 51, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article .content a {
+  display: block;
+  text-align: center;
+  border: 1px solid #5d5d5f;
+  padding: 15px;
+  color: #5b5a5f;
+  background-color: #fff;
+  font-size: 1.42857em;
+  margin-top: 30px;
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+/* line 61, ../sass/template/_main.scss */
+#root .boiler section.carrossel main article .content a:hover {
+  text-decoration: none;
+  background-color: #5d5d5f;
+  color: #fff;
+}
+/* line 71, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 55px 0px 35px 0px;
+}
+/* line 77, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav .navigation {
+  padding: 5px 15px;
+  border: 1px solid #5d5d5d;
+  font-size: 20px;
+  color: #2f2e2c;
+  background-color: #fff;
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  margin: 0px 20px;
+}
+/* line 85, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav .navigation:hover {
+  text-decoration: none;
+  background-color: #5d5d5d;
+  color: #fff;
+}
+/* line 91, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 96, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav ul li {
+  margin: 7px;
+}
+/* line 98, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav ul li a {
+  display: block;
+  width: 53px;
+  height: 13px;
+  background-color: #cfcfcf;
+  transition: background-color 0.6s ease-in-out;
+}
+/* line 104, ../sass/template/_main.scss */
+#root .boiler section.carrossel footer nav ul li a:hover, #root .boiler section.carrossel footer nav ul li a.active {
+  background-color: #444041;
+}
+/* line 115, ../sass/template/_main.scss */
+#root .boiler section.formulario form input {
+  width: 100%;
+  font-size: 1.14286em;
+  border: 2px solid #dbdbdb;
+  padding: 18px;
+  color: #5d5d5f;
+  box-sizing: border-box;
+  outline: none;
+}
+/* line 123, ../sass/template/_main.scss */
+#root .boiler section.formulario form input::placeholder {
+  color: #5d5d5f;
+}
+/* line 127, ../sass/template/_main.scss */
+#root .boiler section.formulario form button {
+  display: block;
+  text-align: center;
+  border: 1px solid #5d5d5f;
+  padding: 15px;
+  background-color: #5d5d5f;
+  color: #fff;
+  font-size: 1.42857em;
+  margin: 30px auto;
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  width: 310px;
+}
+/* line 140, ../sass/template/_main.scss */
+#root .boiler section.formulario form button:hover {
+  text-decoration: none;
+  color: #5b5a5f;
+  background-color: #fff;
 }
