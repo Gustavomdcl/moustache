@@ -9,12 +9,16 @@
       }
     }
     &.carrossel {
-      main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+      main .vehicle {
+        display: none;
+        &.show {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          animation: SlideDown $animation 1 ease-in-out;
+        }
         article {
           flex-shrink: 0;
           flex-grow: 0;
@@ -74,6 +78,7 @@
           justify-content: center;
           align-items: center;
           margin: 55px 0px 35px 0px;
+          visibility: hidden;
           .navigation {
             padding: 5px 15px;
             border: 1px solid #5d5d5d;
@@ -141,6 +146,11 @@
             text-decoration: none;
             color: #5b5a5f;
             background-color: #fff;
+          }
+        }
+        .form-value {
+          .form-message {
+            color: red;
           }
         }
       }

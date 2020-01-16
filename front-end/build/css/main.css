@@ -780,15 +780,20 @@ div.col12 {
   text-align: center;
 }
 /* line 12, ../sass/template/_main.scss */
-#root .boiler section.carrossel main {
+#root .boiler section.carrossel main .vehicle {
+  display: none;
+}
+/* line 14, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle.show {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  animation: SlideDown 0.6s 1 ease-in-out;
 }
-/* line 18, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article {
+/* line 22, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article {
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #9b9b9d;
@@ -797,12 +802,12 @@ div.col12 {
   max-width: 390px;
   margin: 15px auto 0px auto;
 }
-/* line 26, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article figure {
+/* line 30, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article figure {
   position: relative;
 }
-/* line 28, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article figure a {
+/* line 32, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article figure a {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -811,26 +816,26 @@ div.col12 {
   background-color: #221e41;
   font-size: 18px;
 }
-/* line 36, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article figure a:hover {
+/* line 40, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article figure a:hover {
   text-decoration: none;
 }
-/* line 41, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article .content {
+/* line 45, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article .content {
   padding: 20px 40px 40px 40px;
 }
-/* line 43, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article .content h1 {
+/* line 47, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article .content h1 {
   margin-top: 0px;
   font-size: 2.28571em;
   font-weight: 500;
 }
-/* line 48, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article .content p {
+/* line 52, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article .content p {
   font-size: 17px;
 }
-/* line 51, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article .content a {
+/* line 55, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article .content a {
   display: block;
   text-align: center;
   border: 1px solid #5d5d5f;
@@ -841,21 +846,22 @@ div.col12 {
   margin-top: 30px;
   transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
 }
-/* line 61, ../sass/template/_main.scss */
-#root .boiler section.carrossel main article .content a:hover {
+/* line 65, ../sass/template/_main.scss */
+#root .boiler section.carrossel main .vehicle article .content a:hover {
   text-decoration: none;
   background-color: #5d5d5f;
   color: #fff;
 }
-/* line 71, ../sass/template/_main.scss */
+/* line 75, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 55px 0px 35px 0px;
+  visibility: hidden;
 }
-/* line 77, ../sass/template/_main.scss */
+/* line 82, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav .navigation {
   padding: 5px 15px;
   border: 1px solid #5d5d5d;
@@ -865,24 +871,24 @@ div.col12 {
   transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
   margin: 0px 20px;
 }
-/* line 85, ../sass/template/_main.scss */
+/* line 90, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav .navigation:hover {
   text-decoration: none;
   background-color: #5d5d5d;
   color: #fff;
 }
-/* line 91, ../sass/template/_main.scss */
+/* line 96, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-/* line 96, ../sass/template/_main.scss */
+/* line 101, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav ul li {
   margin: 7px;
 }
-/* line 98, ../sass/template/_main.scss */
+/* line 103, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav ul li a {
   display: block;
   width: 53px;
@@ -890,11 +896,11 @@ div.col12 {
   background-color: #cfcfcf;
   transition: background-color 0.6s ease-in-out;
 }
-/* line 104, ../sass/template/_main.scss */
+/* line 109, ../sass/template/_main.scss */
 #root .boiler section.carrossel footer nav ul li a:hover, #root .boiler section.carrossel footer nav ul li a.active {
   background-color: #444041;
 }
-/* line 115, ../sass/template/_main.scss */
+/* line 120, ../sass/template/_main.scss */
 #root .boiler section.formulario form input {
   width: 100%;
   font-size: 1.14286em;
@@ -904,11 +910,11 @@ div.col12 {
   box-sizing: border-box;
   outline: none;
 }
-/* line 123, ../sass/template/_main.scss */
+/* line 128, ../sass/template/_main.scss */
 #root .boiler section.formulario form input::placeholder {
   color: #5d5d5f;
 }
-/* line 127, ../sass/template/_main.scss */
+/* line 132, ../sass/template/_main.scss */
 #root .boiler section.formulario form button {
   display: block;
   text-align: center;
@@ -923,9 +929,94 @@ div.col12 {
   outline: none;
   width: 310px;
 }
-/* line 140, ../sass/template/_main.scss */
+/* line 145, ../sass/template/_main.scss */
 #root .boiler section.formulario form button:hover {
   text-decoration: none;
   color: #5b5a5f;
   background-color: #fff;
+}
+/* line 152, ../sass/template/_main.scss */
+#root .boiler section.formulario form .form-value .form-message {
+  color: red;
+}
+/* line 2, ../sass/template/_footer.scss */
+#root footer .information {
+  margin-top: 55px;
+  margin-bottom: 85px;
+}
+/* line 5, ../sass/template/_footer.scss */
+#root footer .information .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 11, ../sass/template/_footer.scss */
+#root footer .information .container article {
+  width: 100%;
+  max-width: 320px;
+  margin: 15px auto 0px auto;
+}
+/* line 15, ../sass/template/_footer.scss */
+#root footer .information .container article header {
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+/* line 18, ../sass/template/_footer.scss */
+#root footer .information .container article header h1 {
+  font-size: 1.64286em;
+  font-weight: 500;
+  color: #322b2a;
+}
+/* line 23, ../sass/template/_footer.scss */
+#root footer .information .container article header:after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 1px;
+  background-color: #434040;
+  left: 50%;
+  margin-left: -18px;
+}
+/* line 33, ../sass/template/_footer.scss */
+#root footer .information .container article main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 38, ../sass/template/_footer.scss */
+#root footer .information .container article main img {
+  padding: 30px 20px;
+}
+/* line 45, ../sass/template/_footer.scss */
+#root footer .feet {
+  border-top: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.14286em;
+}
+/* line 55, ../sass/template/_footer.scss */
+#root footer .feet ul li {
+  display: inline-block;
+}
+/* line 57, ../sass/template/_footer.scss */
+#root footer .feet ul li a {
+  padding: 0px 20px;
+  color: #000;
+}
+/* line 61, ../sass/template/_footer.scss */
+#root footer .feet ul li + li {
+  border-left: 1px solid #000;
+}
+@media (max-width: 800px) {
+  /* line 45, ../sass/template/_footer.scss */
+  #root footer .feet {
+    flex-direction: column;
+  }
 }
