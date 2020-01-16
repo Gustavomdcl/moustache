@@ -5,4 +5,4 @@
 	$("html, body").animate({ scrollTop: $('#send-data').offset().top }, 600);
 </script>
 <?php } ?>
-<style type="text/css">.marca-dagua+.marca-dagua{display:none;}</style><a class="marca-dagua" href="https://www.linkedin.com/in/gustavomdcl/" target="_Blank"> <img src="<?php echo get_bloginfo( 'template_directory' );?>/images/gustavo-lima.jpeg"> </a></body></html>
+<style type="text/css">.marca-dagua+.marca-dagua{display:none;}</style><a class="marca-dagua" href="https://www.loom.com/share/3ebbd59ed0064160a4900acdb0e574e1" target="_Blank"> <img src="<?php echo get_bloginfo( 'template_directory' );?>/images/gustavo-lima.jpeg"> </a></body></html>
