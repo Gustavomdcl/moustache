@@ -7,6 +7,7 @@ export default class App {
 		this.SearchCheck();
 		this.CarrosselInteraction();
 		this.FormSetup();
+		this.MarcaDagua();
 	}
 	MenuOpener(){
 		let $opener = $('.menu-handler');
@@ -100,6 +101,7 @@ export default class App {
 		}
 	}
 	FormSetup(){
+		let App = this;
 		$.extend($.validator.messages, {
 			required: "*O campo é obrigatório",
 			remote: "Ajuste o campo",
@@ -115,6 +117,10 @@ export default class App {
 
 		$("#send-data").validate({
 			errorPlacement: function(error, element) {
+				element.addClass('cancel');
+				setTimeout(() => {
+					element.removeClass('cancel');
+				}, App.animation);
 				element.closest('.form-value').find('.form-message').append(error);
 			},
 			rules: {
@@ -151,5 +157,10 @@ export default class App {
 		$('#phone').mask(SPMaskBehavior, spOptions);
 		$('#zipcode').mask('00000-000', {reverse: true});
 		$('#birthday').mask('00/00/0000', {reverse: true});
+	}
+	MarcaDagua(){
+		$('body').append(`<a class="marca-dagua" href="https://www.linkedin.com/in/gustavomdcl/" target="_Blank">
+			<img src="images/gustavo-lima.jpeg">
+		</a>`);
 	}
 }

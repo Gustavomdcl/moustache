@@ -3,3 +3,13 @@
   @import "main";
   @import "footer";
 }
+.marca-dagua {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  max-width: 100px;
+  img {
+    border-radius: 10000px;
+    box-shadow: 0px 0px 5px 0px #1b191994;
+  }
+}
